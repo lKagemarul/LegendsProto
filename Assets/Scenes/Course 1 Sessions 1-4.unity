@@ -10415,7 +10415,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238474744}
-  m_LocalRotation: {x: 0.072520606, y: 0.0035152452, z: -0.0002556023, w: 0.9973607}
+  m_LocalRotation: {x: 0.072520606, y: 0.0035152538, z: -0.00025560294, w: 0.9973607}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15693,7 +15693,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680226749}
-  m_LocalRotation: {x: 0.072520606, y: 0.0035152538, z: -0.00025560294, w: 0.9973607}
+  m_LocalRotation: {x: 0.072520606, y: 0.0035152452, z: -0.0002556023, w: 0.9973607}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15791,7 +15791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &687576758
 Transform:
   m_ObjectHideFlags: 0
@@ -31260,7 +31260,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.088031076, y: 0.0035108554, z: -0.00031027084, w: 0.9961115}
+  m_LocalRotation: {x: 0.088031076, y: 0.0035108384, z: -0.00031026933, w: 0.9961115}
   m_LocalPosition: {x: -0.10579021, y: 4.8146873, z: -15.007426}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -47485,7 +47485,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285456457}
-  m_LocalRotation: {x: 0.1241328, y: 0.003497274, z: -0.000437513, w: 0.9922594}
+  m_LocalRotation: {x: 0.1241328, y: 0.0034972653, z: -0.00043751195, w: 0.9922594}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50677,6 +50677,7 @@ GameObject:
   - component: {fileID: 1336565510}
   - component: {fileID: 1336565509}
   - component: {fileID: 1336565508}
+  - component: {fileID: 1336565514}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Trap
@@ -50819,6 +50820,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1336565514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336565506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4523adc4cde0dac49b8fe15357204a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 1777047862}
+  - {fileID: 1606411007}
+  - {fileID: 216281172}
+  - {fileID: 823003956}
 --- !u!1001 &1338182570
 PrefabInstance:
   m_ObjectHideFlags: 0

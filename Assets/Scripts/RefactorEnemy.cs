@@ -46,23 +46,26 @@ public class RefactorEnemy : MonoBehaviour
 
         [Tooltip("How close the enemy needs to be to explode")]
         public float explodeDist;
-
     }
+    
+    private PatrolLogic patrolLogic;
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        patrolLogic = GetComponent<PatrolLogic>();
     }
     private void Update()
     {
         //Patrol logic
         if (enemyStats.idle == true)
         {
-            Patrol();
+            patrolLogic.Move(enemyStats.walkSpeed);
         }
         //Chase the player
-        if (enemyStats.idle == false)
+        else if (enemyStats.idle == false)
         {
-        Chase();
+            Chase();
         }
     }
     private void Patrol()
